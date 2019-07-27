@@ -6,8 +6,8 @@ const $message2 = document.querySelector("#message-2")
 $submitForm.addEventListener("submit", function(event) {
     event.preventDefault();
     if($locationInput.value !== ""){
-        $message1.textContent = "loading..."
-        $message2.textContent = ""
+        $message1.textContent = "loading...";
+        $message2.textContent = "";
         fetchWeatherData($locationInput.value);
         $locationInput.value = "";
     }
