@@ -13,7 +13,7 @@ const forecast = (latitude, longitude, callback) => {
         } else if(body.error){
             callback(body.error);
         } else {
-            callback(undefined, `${body.daily.data[0].summary} It's currently ${body.currently.temperature} \u2103 out there. There is a ${body.currently.precipProbability}% probability of rain. The lowest temperature today will be ${body.daily.data[0].temperatureMin} \u2103, and the hightest ${body.daily.data[0].temperatureMax} \u2103.`);
+            callback(undefined, `${body.daily.data[0].summary} It's currently ${body.currently.temperature} \u2103 out there. There is a ${body.currently.precipProbability}% probability of rain. The lowest temperature today will be ${body.daily.data[0].temperatureMin} \u2103, and the highest ${body.daily.data[0].temperatureMax} \u2103.`);
         }
     })
 }
