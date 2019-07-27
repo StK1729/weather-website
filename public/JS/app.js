@@ -1,4 +1,3 @@
-console.log("Client side javascript is loaded");
 const $submitForm = document.querySelector("form");
 const $locationInput = $submitForm.querySelector(".location-input");
 const $message1 = document.querySelector("#message-1")
