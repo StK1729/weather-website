@@ -19,7 +19,7 @@ const fetchWeatherData = (location) => {
     .then(response=>response.json())
     .then(data=>{
         if(data.error){
-            alert(data.error);
+            $message1.textContent = data.error;
         } else {
             $message1.textContent = data.location;
             $message2.textContent = data.forecast;
